@@ -6,7 +6,7 @@ $('.content').ready(function() {
     }
     ajax('/active', {})
     var interval = setInterval(function() {
-      if(objAjax[0].status === 'success'){
+      if(objAjax[0].status == 'success'){
         clearInterval(interval);
         const arr = objAjax[0].methods
         
