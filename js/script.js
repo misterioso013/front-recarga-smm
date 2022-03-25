@@ -73,7 +73,7 @@ function ajax(path, data) {
           window.localStorage.setItem('name', objAjax[0].name);
           window.localStorage.setItem('refer_id', objAjax[0].refer_id);
 
-          $('#name').html(objAjax[0].name);
+          $('#name').html(window.localStorage.name);
 
           // Criar forma de pagamento
           $("#form-login").css('display', "none");
